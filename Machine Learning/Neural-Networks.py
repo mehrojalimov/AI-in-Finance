@@ -34,4 +34,19 @@ if __name__ == '__main__':
     plt.plot(x, simple_linear_regresion(x, y), lw=3.0, label='linear regression')
     plt.legend()
 
+
+    for deg in [1, 2, 3]:
+        reg = np.polyfit(x, y, deg)
+        y_ = np.polyval(reg, x)
+        MSE_ = MSE(y, y_)
+        print(f' deg = {deg} | MSE = {MSE_:.5f}')
+        plt.plot(x, y_, label=f'deg = {deg}')
+    plt.legend()
+    #deg = 1 | MSE = 9.96182
+    #deg = 2 | MSE = 2.10406
+    #deg = 3 | MSE = 0.00000
+
+    print(reg)
+    #This is the optimal ("perfect") paramether values
+    #[-0.3333  2.      0.     -0.    ]
     plt.show()
