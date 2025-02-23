@@ -60,8 +60,6 @@ def draw_poly(x, y):
         MSE_ = MSE(y, y_)
         print(f' deg = {deg} | MSE = {MSE_:.5f}')
         plt.plot(x, y_, label=f'deg = {deg}')
-<<<<<<< HEAD
-=======
     plt.legend()
     plt.show()
 
@@ -85,7 +83,6 @@ if __name__ == '__main__':
     #draw(x, y, simple_linear_regresion(x, y), 'linear regression')
 
     #draw_poly(x, y)
->>>>>>> efc17cd9127c246c311257521e02a9f59ce4813d
     #deg = 1 | MSE = 9.96182
     #deg = 2 | MSE = 2.10406
     #deg = 3 | MSE = 0.00000
