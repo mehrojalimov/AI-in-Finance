@@ -41,7 +41,6 @@ if __name__ == '__main__':
         MSE_ = MSE(y, y_)
         print(f' deg = {deg} | MSE = {MSE_:.5f}')
         plt.plot(x, y_, label=f'deg = {deg}')
-    plt.legend()
     #deg = 1 | MSE = 9.96182
     #deg = 2 | MSE = 2.10406
     #deg = 3 | MSE = 0.00000
